@@ -4,8 +4,21 @@
              x:Class="PreFinalProject.WelcomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lblWelcome" HorizontalTextAlignment="Center" FontSize="36" Text="{ Binding Username, StringFormat='Hello, {0}' }"></Label>
+            <Label x:Name="lblTitle" HorizontalOptions="Center" FontSize="36">Crypto Checker</Label>
+
+            <Label x:Name="lblWelcome" HorizontalTextAlignment="left" FontSize="20" Text="{ Binding Username, StringFormat='Hello, {0}' }"></Label>
+            <Picker x:Name="pickerCoin" SelectedIndexChanged="pickerCoin_SelectedIndexChanged"></Picker>
+            <Picker x:Name="pickerCurrency" SelectedIndexChanged="pickerCurrency_SelectedIndexChanged"></Picker>
+            <Button x:Name="btnCheckConnection" Text="Test API Connection" Clicked="btnCheckConnection_Clicked"/>
+            <Button x:Name="btnCheckPrice" Text="Check Price" Clicked="btnCheckPrice_Clicked"/>
+            <!--
+            <Button x:Name="btnBitcoinBuyPrice" Text="Bitcoin Buy Price" Clicked="btnBitcoinBuyPrice_Clicked"/>
+            <Button x:Name="btnSLPBuyPrice" Text="SLP Buy Price" Clicked="btnSLPBuyPrice_Clicked"/>
             
+            <Button x:Name="btnShibaInuBuyPrice" Text="Shiba Inu Buy Price" Clicked="btnShibaInuBuyPrice_Clicked"/>
+            -->
+            <Label x:Name="lblResponse" FontSize="26" HorizontalTextAlignment="Center">Test</Label>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
