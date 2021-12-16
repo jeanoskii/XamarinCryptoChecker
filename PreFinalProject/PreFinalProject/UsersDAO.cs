@@ -7,6 +7,9 @@ namespace PreFinalProject
 {
     static class UsersDAO
     {
+        // all tasks in manipulating the Users database
+        // will be in this Data Access Object (DAO) class
+        // this includes adding, querying, editing, and deleting users
         public static async Task CreateTable()
         {
             await DBConn.db.CreateTableAsync<Users>();

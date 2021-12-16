@@ -7,9 +7,11 @@
             <Label x:Name="lblTitle" HorizontalOptions="Center" FontSize="36">Crypto Checker</Label>
 
             <Label x:Name="lblWelcome" HorizontalTextAlignment="left" FontSize="20" Text="{ Binding Username, StringFormat='Hello, {0}' }"></Label>
-            <Picker x:Name="pickerCoin" SelectedIndexChanged="pickerCoin_SelectedIndexChanged"></Picker>
-            <Picker x:Name="pickerCurrency" SelectedIndexChanged="pickerCurrency_SelectedIndexChanged"></Picker>
             <Button x:Name="btnCheckConnection" Text="Test API Connection" Clicked="btnCheckConnection_Clicked"/>
+            <Label>Pick a coin:</Label>
+            <Picker x:Name="pickerCoin" SelectedIndexChanged="pickerCoin_SelectedIndexChanged"></Picker>
+            <Label>Pick a currency:</Label>
+            <Picker x:Name="pickerCurrency" SelectedIndexChanged="pickerCurrency_SelectedIndexChanged"></Picker>
             <Button x:Name="btnCheckPrice" Text="Check Price" Clicked="btnCheckPrice_Clicked"/>
 
             <Label x:Name="lblResponse" FontSize="26" HorizontalTextAlignment="Center">Test</Label>
